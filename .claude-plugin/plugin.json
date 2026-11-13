@@ -1,0 +1,8 @@
+{
+  "name": "jarvis-skills",
+  "version": "1.0.0",
+  "description": "개인 Claude Code 스킬 묶음: comment-check(주석 검사), feature-flow(worktree + GitLab Flow 개발 흐름)",
+  "author": { "name": "call1945-co" },
+  "repository": "https://github.com/call1945-co/claude-skills",
+  "keywords": ["skills", "korean", "comments", "git-worktree", "gitlab-flow"]
+}

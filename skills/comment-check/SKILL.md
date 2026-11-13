@@ -9,10 +9,10 @@ description: Use when the user asks to check, review, trim or humanize code comm
 
 ## 절차
 
-1. **기계 검사** — 저장소(또는 worktree) 폴더에서 돌린다.
+1. **기계 검사** — 저장소(또는 worktree) 폴더에서 돌린다. `<스킬 폴더>` 는 스킬을 불러올 때 표시되는 Base directory 다.
    ```
-   python ~/.claude/skills/comment-check/scripts/check_comments.py <파일·폴더 ...>
-   python ~/.claude/skills/comment-check/scripts/check_comments.py --diff origin/develop   # MR 전: 바뀐 줄의 주석만
+   python <스킬 폴더>/scripts/check_comments.py <파일·폴더 ...>
+   python <스킬 폴더>/scripts/check_comments.py --diff origin/develop   # MR 전: 바뀐 줄의 주석만
    ```
    걸리는 사유: `LEN`(한 줄 50자 초과) · `LINES`(설명 4줄 이상, 파일 헤더는 6줄 이상) · `STACK`(`—`·`( )` 겹침) · `HIST`(MR 번호·날짜·누가 정했는지) · `TONE`(번역투).
 2. **판단 검사** — 대상 파일의 주석을 **모두** 읽고(스크립트가 안 걸었어도) 주석마다 묻는다: *"이 주석을 지우면 읽는 사람이 무엇을 잃나?"*
