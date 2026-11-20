@@ -1,16 +1,18 @@
 {
   "name": "jarvis",
-  "owner": { "name": "call1945-co" },
+  "owner": {
+    "name": "call1945-co"
+  },
   "metadata": {
     "description": "개인 Claude Code 플러그인 마켓플레이스",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "jarvis-skills",
       "source": "./",
-      "description": "comment-check(주석 검사), feature-flow(worktree + GitLab Flow 개발 흐름)",
-      "version": "1.0.0"
+      "description": "comment-check(주석 검사), feature-flow(worktree + GitLab Flow), hexagonal-architecture, isms-compliance, redline-audit, dev-review, mr-review(헥사고날·ISMS-P 규약과 리뷰 흐름)",
+      "version": "1.1.0"
     }
   ]
 }
